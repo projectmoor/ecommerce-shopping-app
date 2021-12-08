@@ -66,8 +66,6 @@ const Header = (props) => {
         menu={<a className="loginName">{auth.user.firstName}</a>}
         menus={[
           { label: "My Profile", href: "", icon: null },
-          { label: "SuperCoin Zone", href: "", icon: null },
-          { label: "Flipkart Plus Zone", href: "", icon: null },
           { label: "Orders", href: "/account/orders", icon: null },
           { label: "Wishlist", href: "", icon: null },
           { label: "My Chats", href: "", icon: null },
@@ -93,7 +91,6 @@ const Header = (props) => {
         }
         menus={[
           { label: "My Profile", href: "", icon: null },
-          { label: "Flipkart Plus Zone", href: "", icon: null },
           { label: "Orders", href: `/account/orders`, icon: null, onClick: () => { !auth.authenticated && setLoginModal(true)} },
           { label: "Wishlist", href: "", icon: null },
           { label: "Rewards", href: "", icon: null },
@@ -229,7 +226,6 @@ const Header = (props) => {
             }
             menus={[
               { label: "Notification Preference", href: "", icon: null },
-              { label: "Sell on flipkart", href: "", icon: null },
               { label: "24x7 Customer Care", href: "", icon: null },
               { label: "Advertise", href: "", icon: null },
               { label: "Download App", href: "", icon: null },
