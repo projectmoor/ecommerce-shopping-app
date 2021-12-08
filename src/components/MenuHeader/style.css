@@ -1,0 +1,55 @@
+.menuHeader {
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 2px -2px #333;
+}
+.menuHeader ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menuHeader > ul {
+    display: flex; /* first level <ul> will be in a row */
+    margin: 0 50px;
+    position: relative;
+}
+.menuHeader > ul > li > span { /* Parent category - individual name*/
+    display: block;
+    line-height: 40px;
+    cursor: pointer;
+    padding: 0 20px;
+    font-size: 14px;
+}
+.menuHeader > ul > li > span:hover { 
+    color: #2874f0;
+}
+.menuHeader > ul > li > ul { /* Child categories ul */
+    position: absolute;
+    background: #fff;
+    left: 0;
+    right: 0;
+    display: none;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+.menuHeader > ul > li:hover ul { /* When hover over parent categories, display child categories ul*/
+    display: block;
+}
+.menuHeader > ul > li > ul > li {/* each individual child category inside the child category ul*/
+    margin: 0 20px; /* align with parent category name */
+    float: left; /* each individual child category occupies one column */
+    min-width: 150px; /* space bw each column */
+}
+.menuHeader > ul > li > ul > li > a { /* first child categoreis*/
+    font-weight: bold;
+    display: block;
+}
+.menuHeader > ul > li > ul > li a { /* first and second child categories*/
+    padding: 3px 0;
+    display: block;
+    font-size: 12px;
+    text-decoration: none;
+    color: #707070;
+} 
